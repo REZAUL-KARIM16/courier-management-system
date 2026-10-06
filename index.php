@@ -1,5 +1,5 @@
 <?php
-// database connect kori
+//  connect database
 include 'includes/db_connect.php';
 ?>
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ include 'includes/db_connect.php';
 
     <div class="stat-grid">
         <?php
-        // protita module er total record count kore stat card banaitesi
+        
         $modules = [
             ["label" => "Customers", "table" => "Customers", "link" => "customers.php"],
             ["label" => "Branches", "table" => "Branches", "link" => "branches.php"],
