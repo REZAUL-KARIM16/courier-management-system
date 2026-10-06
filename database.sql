@@ -1,6 +1,6 @@
 -- ==========================================================
 -- Courier Management System - Database Schema
--- Ei file ta diye pura database ar tables gula create hobe
+
 -- ==========================================================
 
 CREATE DATABASE IF NOT EXISTS courier_db;
@@ -96,16 +96,3 @@ INSERT INTO Payments (parcel_id, amount, payment_date, payment_method, payment_s
 (2, 300.00, CURDATE(), 'bKash', 'Unpaid');
 
 -- ==========================================================
--- Example JOIN / GROUP BY queries - lab report/viva er jonno
--- ==========================================================
-
--- SELECT p.parcel_id, c.name AS customer, b.branch_name, p.status
--- FROM Parcels p
--- JOIN Customers c ON p.customer_id = c.customer_id
--- JOIN Branches b ON p.branch_id = b.branch_id;
-
--- SELECT b.branch_name, SUM(pay.amount) AS total_collected
--- FROM Payments pay
--- JOIN Parcels p ON pay.parcel_id = p.parcel_id
--- JOIN Branches b ON p.branch_id = b.branch_id
--- GROUP BY b.branch_name;
