@@ -54,7 +54,7 @@ $status_list = array("Booked", "In Transit", "Delivered", "Cancelled");
 
 $all_parcels = mysqli_query($conn, "SELECT p.*, c.name AS customer_name, b.branch_name FROM Parcels p LEFT JOIN Customers c ON p.customer_id=c.customer_id LEFT JOIN Branches b ON p.branch_id=b.branch_id ORDER BY p.parcel_id DESC");
 
-// status ta color badge diye dekhanor jonno ekta function banailam
+// status  color badge 
 function status_badge($status) {
     $class = "status-booked";
     if ($status == "In Transit") $class = "status-transit";
