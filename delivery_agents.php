@@ -39,7 +39,7 @@ if (isset($_GET['edit'])) {
     $edit_branch_id = $row['branch_id'];
 }
 
-// dropdown er jonno branch list
+// dropdown for branch list
 $branches = mysqli_query($conn, "SELECT * FROM Branches");
 
 // table e dekhanor jonno agent + branch_name (JOIN)
