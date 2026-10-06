@@ -1,5 +1,5 @@
 <?php
-// database connect kori
+//  connect database
 include 'includes/db_connect.php';
 
 // ============ DELETE ============
@@ -10,7 +10,7 @@ if (isset($_GET['delete'])) {
     exit;
 }
 
-// ============ ADD / UPDATE (ekই form theke duitai hobe) ============
+// ============ ADD / UPDATE  ============
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
     exit;
 }
 
-// ============ EDIT (form e purono data dekhanor jonno) ============
+// ============ EDIT  ============
 $edit_id = "";
 $edit_name = "";
 $edit_phone = "";
